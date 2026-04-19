@@ -3,5 +3,12 @@
     "api/claude.js": {
       "maxDuration": 30
     }
-  }
+  },
+  "routes": [
+    {
+      "src": "/api/claude",
+      "methods": ["POST", "OPTIONS"],
+      "dest": "/api/claude.js"
+    }
+  ]
 }
