@@ -11,7 +11,7 @@ module.exports = async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  const key = process.env.ANTHROPIC_API_KEY;
+  const key = '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';
 
   if (!key) {
     return res.status(500).json({ error: 'API key not configured on server' });
